@@ -1,0 +1,60 @@
+body {
+  display: flex;
+  margin: 0;
+
+  justify-content: center;
+  background-color: limegreen;
+}
+
+#score {
+  /*Align Right**/
+  text-align: right;
+  position: absolute;
+  right: 0;
+  font-size: 40px;
+  font-weight: bold;
+}
+#timer {
+  /*Align Left**/
+  text-align: left;
+  position: absolute;
+  left: 0;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+canvas {
+  animation: rainbow 10s linear infinite alternate;
+}
+
+/** Change colour of border in a keyframes*/
+@keyframes rainbow {
+  0% {
+    border: 1px solid red;
+    box-shadow: 1px 1px 38px red;
+  }
+  15% {
+    border: 1px solid orange;
+    box-shadow: 1px 1px 38px orange;
+  }
+  30% {
+    border: 1px solid yellow;
+    box-shadow: 1px 1px 38px yellow;
+  }
+  48% {
+    border: 1px solid green;
+    box-shadow: 1px 1px 38px green;
+  }
+  65% {
+    border: 1px solid blue;
+    box-shadow: 1px 1px 38px blue;
+  }
+  88% {
+    border: 1px solid indigo;
+    box-shadow: 1px 1px 38px indigo;
+  }
+  100% {
+    border: 1px solid violet;
+    box-shadow: 1px 1px 38px violet;
+  }
+}
