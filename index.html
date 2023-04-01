@@ -30,25 +30,21 @@
     <div class="ui modal">
       <i class="close icon"></i>
       <div class="header">
-        Modal Title
+        Sketches
       </div>
       <div class="image content">
         <img src="sketch1.png">
-        <img src="sketch2.png">
-        <div class="description">
-          A description can appear on the right
-        </div>
       </div>
       <div class="actions">
         <div class="ui negative button">Cancel</div>
         <div class="ui positive button">OK</div>
       </div>
     </div>
-    <div class="ui huge blue header">
-      QuickDraw Game
-      <br> <br>
+    <div class="ui huge blue header" id="heady">
+      <p>QuickDraw Game</p>
       <button class="ui blue button" onclick="setupX()"> Show Sketches </button>
       <button class="ui red button" onclick="clearCanvas(event)" id="clear">Reset Game</button>
+      <button class="ui orange button" onclick="skipTask()" id="skip">Skip?</button>
     </div> <br>
 
     <div class="ui large label">
@@ -61,8 +57,8 @@
       Confidence: <span id="conf"></span>
     </div>
 
-    <p id="score"> Score: <span class="score_label"></span></p>
-    <p id="timer"> Timer: <span class="timer_label"></span></p>
+    <p id="score"> Score: ‎ <span id="score_label">‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ </span></p>
+    <p id="timer"> ‎ ‎ Timer: ‎ <span id="timer_label"></span></p>
 
 
 </body>

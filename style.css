@@ -6,6 +6,21 @@ body {
   background-color: limegreen;
 }
 
+
+#heady {
+  width: 100vw
+}
+#heady > p {
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  
+  background-color: rgb(44, 77, 128);
+  color: rgb(143, 167, 214);
+  
+  width: 100%;
+}
+
 #score {
   /*Align Right**/
   text-align: right;
